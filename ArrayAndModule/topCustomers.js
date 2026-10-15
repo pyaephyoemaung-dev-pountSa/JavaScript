@@ -1,4 +1,6 @@
 import orders from './orders.js';
-
-const topCustomers = orders.orders.filter((order) => order.total > 30000);
-console.log(topCustomers);
+const topCustomers = orders.reduce((acc, order) => {
+    
+    acc[customerId] = (acc[customerId] || 0) + total;
+    return acc;
+}, {});
